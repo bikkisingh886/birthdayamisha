@@ -1523,7 +1523,7 @@ var retina = window.devicePixelRatio,
   var prev = _now();
   function fallback(fn) {
     var curr = _now();
-    var ms = Math.max(0, 16 - (curr - prev));
+    var ms = Math.max(0, 25 - (curr - prev));
     var req = setTimeout(fn, ms);
     prev = curr;
     return req;
